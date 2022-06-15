@@ -6,7 +6,7 @@ import AppBar from './AppBar/AppBar';
 const HomePage = lazy(() => import('pages/HomePage/HomePage.jsx'));
 const MoviesPage = lazy(() => import('pages/MoviesPage/MoviesPage.jsx'));
 const MovieDetailsPage = lazy(() =>
-  import('pages/MovieDetailsPage/MovieDetailsPage.jsx'),
+  import('pages/MovieDetailsPage/MovieDetailsPage.jsx')
 );
 const Cast = lazy(() => import('../pages/Cast/Cast.jsx'));
 const Reviews = lazy(() => import('../pages/Reviews/Reviews.jsx'));
