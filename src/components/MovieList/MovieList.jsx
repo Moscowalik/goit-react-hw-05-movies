@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import MovieListItem from 'components/MovieListItem/MovieListItem';
+import MovieListItem from 'components/MovieList/MovieListItem/MovieListItem';
 import styles from './MovieList.module.css';
+
 const MovieList = ({ movies }) => {
   return (
     <ul className={styles.movieList}>
@@ -15,6 +16,7 @@ const MovieList = ({ movies }) => {
     </ul>
   );
 };
+
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
@@ -22,4 +24,5 @@ MovieList.propTypes = {
     }),
   ),
 };
+
 export default MovieList;

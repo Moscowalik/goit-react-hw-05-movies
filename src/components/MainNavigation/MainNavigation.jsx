@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './MainNavigation.module.css';
+
 const MainNavigation = () => {
   const setActive = ({ isActive }) =>
     isActive ? styles.activeLink : styles.link;
@@ -18,4 +19,5 @@ const MainNavigation = () => {
     </nav>
   );
 };
+
 export default MainNavigation;

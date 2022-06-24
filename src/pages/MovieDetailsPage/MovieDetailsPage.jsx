@@ -4,6 +4,7 @@ import * as moviesApi from 'services/movies-api';
 import MovieDetails from 'components/MovieDetails/MovieDetails';
 import NavInMovieDetailsPage from '../../components/NavInMovieDetailsPage/NavInMovieDetailsPage';
 import styles from './MovieDetailsPage.module.css';
+
 export default function MovieDetailsPage() {
   const { movieId } = useParams();
   const [currentMovie, setCurrentMovie] = useState(null);

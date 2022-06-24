@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import CastItem from 'components/CastItem/CastItem';
+import CastItem from 'components/CastList/CastItem/CastItem';
 import styles from './CastList.module.css';
+
 const CastList = ({ credits }) => {
   return (
     <ul className={styles.cast}>
@@ -20,6 +21,7 @@ const CastList = ({ credits }) => {
     </ul>
   );
 };
+
 CastList.propTypes = {
   credits: PropTypes.arrayOf(
     PropTypes.shape({
@@ -27,4 +29,5 @@ CastList.propTypes = {
     }),
   ),
 };
+
 export default CastList;

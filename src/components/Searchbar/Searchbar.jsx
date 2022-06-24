@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import styles from '../Searchbar/Searchbar.module.css';
+
 export default function Searchbar({ onSubmit }) {
   const [movieValue, setMovieValue] = useState('');
   const handleNameChange = event =>
@@ -32,4 +33,5 @@ export default function Searchbar({ onSubmit }) {
     </>
   );
 }
+
 Searchbar.propTypes = { onSubmit: PropTypes.func.isRequired };

@@ -1,4 +1,5 @@
 import MainNavigation from 'components/MainNavigation/MainNavigation';
+
 const AppBar = () => {
   return (
     <header>
@@ -6,4 +7,5 @@ const AppBar = () => {
     </header>
   );
 };
+
 export default AppBar;

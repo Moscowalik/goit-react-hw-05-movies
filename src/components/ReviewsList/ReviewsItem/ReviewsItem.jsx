@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './ReviewsItem.module.css';
+
 const ReviewsItem = ({ author, content }) => {
   return (
     <li className={styles.review}>
@@ -8,8 +9,10 @@ const ReviewsItem = ({ author, content }) => {
     </li>
   );
 };
+
 ReviewsItem.propTypes = {
   author: PropTypes.string,
   content: PropTypes.string,
 };
+
 export default ReviewsItem;

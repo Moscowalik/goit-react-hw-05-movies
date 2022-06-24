@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import CastList from 'components/CastList/CastList';
 import * as moviesApi from 'services/movies-api';
+
 export default function Cast() {
   const currentMovieId = useParams();
   const idMovie = Number(currentMovieId.movieId);

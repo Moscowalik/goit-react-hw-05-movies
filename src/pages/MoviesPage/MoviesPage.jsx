@@ -7,6 +7,7 @@ import Searchbar from '../../components/Searchbar/Searchbar';
 import MyLoader from 'components/Loader/Loader';
 import Button from 'components/LoadMoreBtn/LoadMoreBtn';
 import styles from '../MoviesPage/MoviesPage.module.css';
+
 export default function MoviesPage() {
   const [moviesArr, setMoviesArr] = useState([]);
   const [movieValue, setMovieValue] = useState('');

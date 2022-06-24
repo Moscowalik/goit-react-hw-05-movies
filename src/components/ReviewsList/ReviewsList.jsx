@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ReviewsItem from 'components/ReviewsItem/ReviewsItem';
+import ReviewsItem from 'components/ReviewsList/ReviewsItem/ReviewsItem';
 import styles from './ReviewsList.module.css';
 const ReviewsList = ({ reviews }) => {
   return (

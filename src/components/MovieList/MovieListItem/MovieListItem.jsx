@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import outOfPoster from '../../images/outOfPoster.jpg';
+import outOfPoster from '../../../images/outOfPoster.jpg';
 import styles from './MovieListItem.module.css';
+
 const MovieListItem = ({ id, title, poster }) => {
   const location = useLocation();
   return (
@@ -11,15 +12,11 @@ const MovieListItem = ({ id, title, poster }) => {
         {poster ? (
           <img
             src={`https://image.tmdb.org/t/p/w500${poster}`}
-            alt={title}
-            width={120}
             className={styles.movieItemImg}
           />
         ) : (
           <img
             src={outOfPoster}
-            alt={title}
-            width={120}
             className={styles.movieItemImg}
           />
         )}
@@ -27,9 +24,11 @@ const MovieListItem = ({ id, title, poster }) => {
     </li>
   );
 };
+
 MovieListItem.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   poster: PropTypes.string,
 };
+
 export default MovieListItem;

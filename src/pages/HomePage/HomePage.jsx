@@ -6,6 +6,7 @@ import MyLoader from 'components/Loader/Loader';
 import Button from 'components/LoadMoreBtn/LoadMoreBtn';
 import { addBackToTop } from 'vanilla-back-to-top';
 import styles from './HomePage.module.css';
+
 export default function HomePage() {
   const [movies, setMovies] = useState([]);
   const [currentPage, setСurrentPage] = useState(1);

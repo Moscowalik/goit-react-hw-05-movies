@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import styles from './NavInMovieDetailsPage.module.css';
+
 const NavInMovieDetailsPage = () => {
   const setActive = ({ isActive }) =>
     isActive ? styles.activeLink : styles.link;
@@ -18,4 +19,5 @@ const NavInMovieDetailsPage = () => {
     </div>
   );
 };
+
 export default NavInMovieDetailsPage;

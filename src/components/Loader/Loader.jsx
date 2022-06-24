@@ -1,4 +1,5 @@
 import ContentLoader from 'react-content-loader';
+
 const MyLoader = props => (
   <ContentLoader
     speed={2}
@@ -14,4 +15,5 @@ const MyLoader = props => (
     <circle cx="303" cy="60" r="20" />
   </ContentLoader>
 );
+
 export default MyLoader;
