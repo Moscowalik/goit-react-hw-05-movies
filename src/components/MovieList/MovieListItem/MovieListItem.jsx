@@ -12,11 +12,13 @@ const MovieListItem = ({ id, title, poster }) => {
         {poster ? (
           <img
             src={`https://image.tmdb.org/t/p/w500${poster}`}
+            alt={title}
             className={styles.movieItemImg}
           />
         ) : (
           <img
             src={outOfPoster}
+            alt={title}
             className={styles.movieItemImg}
           />
         )}

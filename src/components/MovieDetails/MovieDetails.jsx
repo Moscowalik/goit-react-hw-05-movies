@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './MovieDetails.module.css';
 import outOfPoster from '../../images/outOfPoster.jpg';
-
 const MovieDetails = ({
   poster,
   title,
@@ -16,11 +15,13 @@ const MovieDetails = ({
         {poster ? (
           <img
             src={`https://image.tmdb.org/t/p/w500${poster}`}
+            alt={title}
             className={styles.currentMoviePoster}
           />
         ) : (
           <img
             src={outOfPoster}
+            alt={title}
             className={styles.currentMoviePoster}
           />
         )}
@@ -46,7 +47,6 @@ const MovieDetails = ({
     </div>
   );
 };
-
 
 MovieDetails.propTypes = {
   poster: PropTypes.string,
